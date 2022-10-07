@@ -1,0 +1,50 @@
+/*Propiedades del encabezado*/
+header {
+    position: static;
+    width: 420px;
+    height: 85px;
+    mix-blend-mode: color-dodge;
+}
+
+header div {
+    position: absolute;
+    width: 420px;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+    background: #601714;
+    mix-blend-mode: normal;
+}
+
+#cabecera {
+    position: fixed;
+    width: 323px;
+    height: 85px;
+    left: 0px;
+    top: 0px;
+}
+
+#logo {
+    position: absolute;
+    width: 84px;
+    height: 79px;
+    left: 326px;
+    top: 0px;
+}
+
+header div div{
+    position: absolute;
+    width: 194px;
+    height: 30px;
+    left: 129px;
+    top: 49px;
+    font-family: 'PT Serif Caption';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    background: none;
+}
+
+/*Propiedades del pie de pagina*/
