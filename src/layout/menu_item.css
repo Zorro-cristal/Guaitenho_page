@@ -1,0 +1,26 @@
+li {
+    display: inline;
+    background: #282A35;
+    color: #f1f1f1;
+    font-family: 'Source Sans Pro', sans-serif;
+    float: left;
+    border-style: outset;
+    border-color: #FFFFFF;
+    border-width: 2.5px;
+    padding: 0 10px 0 0;
+    height: 35px;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    color: #dddddd;
+}
+
+li:hover {
+    background: #601714;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
