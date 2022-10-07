@@ -28,17 +28,17 @@ export const Principal= ({children}) => {
                 <img src={pie} id="pie" />
                 <div>
                     <img src={facebook_logo} id="facebook_logo" className='redes_logo' />
-                    <div className='redes_texto' id='texto_facebook'>
+                    <a className='redes_texto' id='texto_facebook' href='https://www.facebook.com/guaitenohouse'>
                         Facebook
-                    </div>
+                    </a>
                     <img src={instagram_logo} id="instagram_logo" className='redes_logo' />
-                    <div className='redes_texto' id='texto_instagram'>
+                    <a className='redes_texto' id='texto_instagram' href='https://www.instagram.com/guaitenohouse/'>
                         Instagram
-                    </div>
+                    </a>
                     <img src={whatsapp_logo} id="whatsapp_logo" className='redes_logo' />
-                    <div className='redes_texto' id='texto_whatsapp'>
+                    <a className='redes_texto' id='texto_whatsapp' href='https://wa.me/595983510916'>
                         Whatsapp
-                    </div>
+                    </a>
                     <div id='numero'>
                         0983-510916
                     </div>
