@@ -18,7 +18,7 @@ header div {
 
 #cabecera {
     position: fixed;
-    width: 323px;
+    width: 420px;
     height: 85px;
     left: 0px;
     top: 0px;
@@ -38,7 +38,7 @@ header div div{
     height: 30px;
     left: 129px;
     top: 49px;
-    font-family: 'PT Serif Caption';
+    font-family: 'PT Serif Caption, Serif';
     font-style: italic;
     font-weight: 400;
     font-size: 24px;
@@ -48,3 +48,113 @@ header div div{
 }
 
 /*Propiedades del pie de pagina*/
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 420px;
+    height: 98px;
+    mix-blend-mode: color-dodge;
+    background: #14425C;
+}
+
+footer div {
+    position: absolute;
+    width: 420px;
+    height: 98px;
+    left: 0px;
+    top: 0px;
+    background: none;
+    mix-blend-mode: normal;
+}
+
+#pie {
+    position: absolute;
+    width: 420px;
+    height: 98px;
+    left: 1px;
+    top: 0px;
+    mix-blend-mode: normal;
+}
+
+#pie div {
+    background: none;
+    position: absolute;
+}
+
+.redes_logo{
+    position: absolute;
+    width: 24px;
+    height: 21px;
+}
+
+#facebook_logo {
+    left: 150px;
+    top: 66px;
+}
+
+#instagram_logo {
+    left: 250px;
+    top: 66px;
+}
+
+#whatsapp_logo {
+    left: 40px;
+    top: 66px;
+}
+
+.redes_texto {
+    position: absolute;
+    width: 89px;
+    height: 24px;
+    font-family: 'PT Serif Caption, Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+#texto_facebook {
+    left: 160px;
+    top: 69px;
+}
+
+#texto_instagram {
+    left: 260px;
+    top: 69px;
+}
+
+#texto_whatsapp {
+    left: 50px;
+    top: 69px;
+}
+
+#direccion {
+    position: absolute;
+    width: 75px;
+    height: 35px;
+    left: 350px;
+    top: 66px;
+    font-family: 'PT Serif Caption';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+#numero {
+    position: absolute;
+    width: 80px;
+    height: 10px;
+    left: 340px;
+    top: 46px;
+    font-family: 'PT Serif Caption';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
