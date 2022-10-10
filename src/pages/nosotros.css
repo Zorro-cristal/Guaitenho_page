@@ -1,0 +1,125 @@
+.nosotros {
+    height: 340px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    position: relative;
+}
+
+#avatar {
+    position: absolute;
+    width: 196px;
+    height: 340px;
+    left: 0px;
+    top: 0px;
+}
+
+h1 {
+    position: absolute;
+    width: 209px;
+    height: 29px;
+    font-family: 'PT Serif Caption, Brush Script MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+
+#quien_titul {
+    left: 197px;
+    top: 6px;
+}
+
+#sigue_titul {
+    left: 198px;
+    top: 155px;
+}
+
+.rectangulo {
+    box-sizing: border-box;
+    background: #D9D9D9;
+    border: 2.5px solid #000000;
+    position: absolute;
+    width: 210px;
+}
+
+#quien_rect {
+    height: 102px;
+    left: 197px;
+    top: 45px;
+}
+
+#quien_rect p {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+    font-family: 'Josefin Sans, Georgia';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color: #000000;
+    text-align: justify;
+    margin: 2px 2px 2px 2px;
+}
+
+#sigue_rect {
+    left: 197px;
+    top: 190px;
+    height: 125px;
+}
+
+.redes_logo {
+    font-family: 'PT Serif Caption, Brush Script MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 15px;
+}
+
+.redes_text {
+    font-family: 'PT Serif Caption, Brush Script MT';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    position: absolute;
+    height: 30px;
+    left: 45px;
+    text-align: left;
+}
+
+.caja_redes {
+    position: relative;
+    height: 40px;
+    width: 200px;
+}
+
+#caja_facebook {
+    padding-top: 5px;
+}
+
+#firma {
+    position: absolute;
+    width: 75px;
+    height: 12px;
+    left: 335px;
+    top: 320px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: right;
+    color: #000000;
+}

@@ -83,28 +83,28 @@ footer div {
     position: absolute;
 }
 
-.redes_logo{
+.redes_logo_pie {
     position: absolute;
     width: 24px;
     height: 21px;
 }
 
-#facebook_logo {
+#facebook_logo_pie {
     left: 150px;
     top: 66px;
 }
 
-#instagram_logo {
+#instagram_logo_pie {
     left: 250px;
     top: 66px;
 }
 
-#whatsapp_logo {
+#whatsapp_logo_pie {
     left: 40px;
     top: 66px;
 }
 
-.redes_texto {
+.redes_texto_pie {
     position: absolute;
     width: 89px;
     height: 24px;
@@ -116,19 +116,19 @@ footer div {
     color: #FFFFFF;
 }
 
-#texto_facebook {
-    left: 160px;
-    top: 69px;
+#texto_facebook_pie {
+    left: 155px;
+    top: 62px;
 }
 
-#texto_instagram {
-    left: 260px;
-    top: 69px;
+#texto_instagram_pie {
+    left: 255px;
+    top: 62px;
 }
 
-#texto_whatsapp {
-    left: 50px;
-    top: 69px;
+#texto_whatsapp_pie {
+    left: 45px;
+    top: 62px;
 }
 
 #direccion {
@@ -170,4 +170,12 @@ ul {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+/*Cuerpo*/
+.cuerpo {
+    position: absolute;
+    width: 420px;
+    left: 0px;
+    top: 125px;
 }
