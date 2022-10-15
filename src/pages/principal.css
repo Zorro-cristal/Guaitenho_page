@@ -1,15 +1,14 @@
 /*Propiedades del encabezado*/
 header {
     position: static;
-    width: 420px;
-    height: 85px;
+    height: 20%;
     mix-blend-mode: color-dodge;
 }
 
 header div {
-    position: absolute;
-    width: 420px;
-    height: 85px;
+    position: fixed;
+    height: 20%;
+    width: 100%;
     left: 0px;
     top: 0px;
     background: #601714;
@@ -18,31 +17,30 @@ header div {
 
 #cabecera {
     position: fixed;
-    width: 420px;
-    height: 85px;
+    width: 100%;
+    height: 20%;
     left: 0px;
     top: 0px;
 }
 
 #logo {
-    position: absolute;
-    width: 84px;
-    height: 79px;
-    left: 326px;
-    top: 0px;
+    position: relative;
+    width: 10%;
+    height: 65%;
+    left: 43%;
+    top: 25%;
 }
 
 header div div{
-    position: absolute;
-    width: 194px;
-    height: 30px;
-    left: 129px;
-    top: 49px;
+    position: relative;
+    width: 50%;
+    height: 20%;
+    left: 40%;
+    top: -20%;
     font-family: 'PT Serif Caption, Brush Script MT';
     font-style: italic;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 350%;
     color: #FFFFFF;
     background: none;
 }
@@ -53,16 +51,14 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 420px;
-    height: 98px;
+    height: 20%;
     mix-blend-mode: color-dodge;
     background: #14425C;
 }
 
 footer div {
-    position: absolute;
-    width: 420px;
-    height: 98px;
+    position: relative;
+    height: 100%;
     left: 0px;
     top: 0px;
     background: none;
@@ -71,8 +67,8 @@ footer div {
 
 #pie {
     position: absolute;
-    width: 420px;
-    height: 98px;
+    width: 99.9%;
+    height: 100%;
     left: 1px;
     top: 0px;
     mix-blend-mode: normal;
@@ -85,91 +81,75 @@ footer div {
 
 .redes_logo_pie {
     position: absolute;
-    width: 24px;
-    height: 21px;
+    width: 7%;
+    top: 50%;
 }
 
 #facebook_logo_pie {
-    left: 150px;
-    top: 66px;
+    left: 25%;
 }
 
 #instagram_logo_pie {
-    left: 250px;
-    top: 66px;
+    left: 47%;
 }
 
 #whatsapp_logo_pie {
-    left: 40px;
-    top: 66px;
+    left: 2%;
 }
 
 .redes_texto_pie {
     position: absolute;
-    width: 89px;
-    height: 24px;
+    text-decoration: none;
+    width: auto;
+    height: auto;
     font-family: 'PT Serif Caption, Brush Script MT';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 150%;
     line-height: 16px;
     color: #FFFFFF;
+    top: 62%;
 }
 
 #texto_facebook_pie {
-    left: 155px;
-    top: 62px;
+    left: 32%;
 }
 
 #texto_instagram_pie {
-    left: 255px;
-    top: 62px;
+    left: 55%;
 }
 
 #texto_whatsapp_pie {
-    left: 45px;
-    top: 62px;
+    left: 9%;
 }
 
 #direccion {
     position: absolute;
-    width: 75px;
-    height: 35px;
-    left: 350px;
-    top: 66px;
+    width: 15%;
+    height: 50%;
+    left: 85%;
+    top: 30%;
     font-family: 'PT Serif Caption';
     font-style: italic;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 13px;
+    font-size: 150%;
+    line-height: 100%;
     color: #FFFFFF;
 }
 
 #numero {
     position: absolute;
-    width: 80px;
-    height: 10px;
-    left: 340px;
-    top: 46px;
+    width: auto;
+    height: auto;
+    left: 83%;
+    top: 75%;
     font-family: 'PT Serif Caption, Brush Script MT';
     font-style: italic;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 150%;
     line-height: 13px;
     color: #FFFFFF;
-}
-
-/*Diseño del menu*/
-ul {
-    position: absolute;
-    left: 0px;
-    top: 85px;
-    width: 420px;
-    display:inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    text-decoration: none;
 }
 
 /*Cuerpo*/
