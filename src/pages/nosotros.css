@@ -37,14 +37,6 @@ h1 {
     top: 155px;
 }
 
-.rectangulo {
-    box-sizing: border-box;
-    background: #D9D9D9;
-    border: 2.5px solid #000000;
-    position: absolute;
-    width: 210px;
-}
-
 #quien_rect {
     height: 102px;
     left: 197px;
@@ -71,38 +63,6 @@ h1 {
     left: 197px;
     top: 190px;
     height: 125px;
-}
-
-.redes_logo {
-    font-family: 'PT Serif Caption, Brush Script MT';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #000000;
-    position: absolute;
-    height: 30px;
-    width: 30px;
-    left: 15px;
-}
-
-.redes_text {
-    font-family: 'PT Serif Caption, Brush Script MT';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    color: #000000;
-    position: absolute;
-    height: 30px;
-    left: 45px;
-    text-align: left;
-}
-
-.caja_redes {
-    position: relative;
-    height: 40px;
-    width: 200px;
 }
 
 #caja_facebook {
