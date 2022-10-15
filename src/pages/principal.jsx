@@ -7,8 +7,9 @@ import instagram_logo from '../assets/redes_sociales/Instagram.png'
 import whatsapp_logo from '../assets/redes_sociales/Whatsapp.png'
 import { Menu_item } from '../layout/menu_item'
 import Nosotros_page from './nosotros'
+import Creador_page from './creador'
 
-export const Principal= ({children}) => {
+export const Principal= () => {
     const menus= ["Inicio", "Productos", "Sobre Nosotros", "Contactos"]
 
     return (<>
@@ -25,7 +26,8 @@ export const Principal= ({children}) => {
             ))}
         </ul>
         <div className='cuerpo'>
-            <Nosotros_page />
+            {/* <Nosotros_page /> */}
+            {/* <Creador_page /> */}
         </div>
         <footer>
             <div>
