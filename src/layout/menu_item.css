@@ -1,5 +1,6 @@
 li {
     display: inline;
+    width: 23.3%;
     background: #282A35;
     color: #f1f1f1;
     font-family: 'Source Sans Pro', sans-serif;
@@ -8,13 +9,15 @@ li {
     border-color: #FFFFFF;
     border-width: 2.5px;
     padding: 0 10px 0 0;
-    height: 35px;
 }
 
 a {
     display: block;
     padding: 8px;
     color: #dddddd;
+    text-decoration: none;
+    text-size-adjust: 30%;
+    width: 95%;
 }
 
 li:hover {
