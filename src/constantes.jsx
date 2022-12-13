@@ -1,0 +1,1 @@
+export const Paginas= ['Inicio', 'Productos', 'Servicios', 'Contactos'];
