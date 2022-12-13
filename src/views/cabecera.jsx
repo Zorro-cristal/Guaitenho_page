@@ -18,15 +18,7 @@ export default function Cabecera() {
     console.log(window.pageYOffset);
     let scrollPos= window.pageYOffset;
     if (scrollPos > 100) {
-        return (<>
-            <div style={{
-                position: "fixed",
-                top: "0"
-            }}>
-                <Menu_flotante/>
-            </div>
-            <div style={{height: "200px"}}></div>
-        </>);
+        return (<Menu_flotante />);
     } else {
         return (<div style={estilo}>
             <h1>Portada foto</h1>
