@@ -9,12 +9,9 @@ export default function Cabecera() {
     const estilo= {
         backgroundColor: "blue",
         height: "200px",
-        width: "100vw",
-        position: "absolute",
-        top: "0",
-        left: "0"
+        width: "100%",
+        position: "relative"
     };
-    var scrollDirection= useScrollDirecction();
     console.log(window.pageYOffset);
     let scrollPos= window.pageYOffset;
     if (scrollPos > 100) {
@@ -25,28 +22,4 @@ export default function Cabecera() {
             <Menu_superior />
         </div>);
     }
-}
-
-function useScrollDirecction() {
-    const [scrollDirection, setScrollDirection]= useState(null);
-
-    useEffect(
-        () => {
-            let lastScrollY= window.pageYOffset;
-            console.log(lastScrollY);
-            const updateScrollDirection= () => {
-                const scrollY= window.pageYOffset;
-                const direction= scrollY > lastScrollY ? "down" : "up";
-                if (direction !== scrollDirection && (scrollY - lastScrollY > 10 || scrollY - lastScrollY < -10)) {
-                    setScrollDirection(direction);
-                }
-                lastScrollY= scrollY > 0 ? scrollY : 0;
-            };
-            window.addEventListener("scroll", updateScrollDirection);
-            return () => {
-                window.removeEventListener("scroll", updateScrollDirection);
-            }
-        }, [scrollDirection]
-    );
-    return scrollDirection;
 }
