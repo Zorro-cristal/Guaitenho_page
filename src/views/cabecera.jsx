@@ -14,7 +14,7 @@ export default function Cabecera() {
     };
     console.log(window.pageYOffset);
     let scrollPos= window.pageYOffset;
-    if (scrollPos > 100) {
+    if (scrollPos > 10) {
         return (<Menu_flotante />);
     } else {
         return (<div style={estilo}>

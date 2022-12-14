@@ -41,11 +41,11 @@ export default function Menu_flotante() {
             <Box sx={{ flexGrow: 1, position: "absolute", right: "0", display: { xs: 'none', md: 'flex' }}}>
               {Paginas.map((pag) => (
                 <Button
-                  key={pag}
+                  key={pag.nombre}
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: 'white', display: 'block' }}
                 >
-                  {pag}
+                  {pag.nombre}
                 </Button>
               ))}
             </Box>

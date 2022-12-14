@@ -1,6 +1,16 @@
 import { createTheme } from "@mui/material";
 
-export const Paginas= ['Inicio', 'Productos', 'Servicios', 'Contactos'];
+//export const Paginas= ['Inicio', 'Productos', 'Servicios', 'Contactos'];
+export const Paginas= [
+    {
+        ruta: "/principal",
+        nombre: "Inicio"
+    },
+    {
+        ruta: "/secundaria",
+        nombre: "Secundaria"
+    }
+];
 
 export const temas= createTheme({
     palette: {
