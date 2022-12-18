@@ -11,11 +11,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider theme={temas}>
       <BrowserRouter>
-        <div style={{width: "100vw", left: "0", top: "0", position: "absolute"}}>
-          <Cabecera/>
+        {/* <div style={{width: "100vw", left: "0", top: "0", position: "absolute"}}> */}
           <Rutas_principales/>
           <Pie />
-        </div>
+        {/* </div> */}
       </BrowserRouter>
     </ThemeProvider>
   </React.StrictMode>
