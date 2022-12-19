@@ -4,6 +4,7 @@ import AppBar from '@mui/material/AppBar';
 import { Button, Container, Toolbar, Typography } from '@mui/material';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Paginas } from '../constantes';
+import { Link } from 'react-router-dom';
 
 
 export default function Menu_flotante() {
@@ -40,13 +41,15 @@ export default function Menu_flotante() {
             </Typography>
             <Box sx={{ flexGrow: 1, position: "absolute", right: "0", display: { xs: 'none', md: 'flex' }}}>
               {Paginas.map((pag) => (
-                <Button
-                  key={pag.nombre}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
-                >
-                  {pag.nombre}
-                </Button>
+                <Link to={pag.ruta}>
+                  <Button
+                    key={pag.nombre}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: 'white', display: 'block' }}
+                  >
+                    {pag.nombre}
+                  </Button>
+                </Link>
               ))}
             </Box>
           </Toolbar>
