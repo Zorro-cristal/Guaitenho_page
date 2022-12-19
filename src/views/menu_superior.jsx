@@ -5,7 +5,8 @@ import { Paginas } from '../constantes';
 
 export default function Menu_superior() {
   return (
-      <Breadcrumbs aria-label="breadcrumb">
+    <div style={{display: 'flex', justifyContent: 'end'}}>
+      <Breadcrumbs aria-label="breadcrumb" separator= "/">
         {Paginas.map((pag, i) => (
           <Link underline="hover" color="inherit" href={pag.ruta} key={i}>
             {pag.nombre}
@@ -13,5 +14,6 @@ export default function Menu_superior() {
         ))}
         {/* <Typography color="text.primary">Breadcrumbs</Typography> */}
       </Breadcrumbs>
+    </div>
   );
 }

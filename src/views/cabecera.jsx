@@ -9,6 +9,7 @@ export default function Cabecera() {
     };
     return (<div style={estilo}>
         <Menu_superior />
+        
         <h2>Sobre Nosotros</h2>
         <h4>Somos una empresa que realiza ventas online por Villarrica y ofrece sus servicios a nivel pais</h4>
         <Button variant="outlinde">Ver más</Button>
