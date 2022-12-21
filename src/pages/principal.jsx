@@ -2,10 +2,12 @@ import { Container } from '@mui/material';
 import { style } from '@mui/system';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import { temas } from '../constantes';
+
 import Fondo_body from '../layout/fondo_body';
 import Cabecera from '../views/cabecera';
 import Menu_flotante from '../views/menu_flotante';
+import "../styless/principal.css";
+import { temas } from '../styless/temas';
 
 //https://cssgradient.io/
 
@@ -30,7 +32,7 @@ const Principal= () => {
         <Cabecera />
         <Fondo_body>
             <h1>Bienvenidos a nuestra tienda virtual</h1>
-            <h4>En esta tienda encontraras los mejores precios del mercado</h4>
+            <h4 className='descripcion_tienda'>En esta tienda encontraras los mejores precios del mercado</h4>
             <Container style={{
                 width: "80%",
                 height: 200

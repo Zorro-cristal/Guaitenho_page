@@ -2,8 +2,8 @@ import { ThemeProvider } from '@mui/material'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {BrowserRouter} from "react-router-dom"
-import { temas } from './constantes'
 import Rutas_principales from './router/Rutas_principales'
+import { temas } from './styless/temas'
 import Cabecera from './views/cabecera'
 import Pie from './views/pie'
 
