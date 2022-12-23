@@ -22,6 +22,9 @@ export const temas= createTheme({
         },
         cuerpo: {
             fontFamily: 'Bahnschrift SemiBold SemiCondensed'
+        },
+        recuadro: {
+            fontFamily: 'Bahnschrift Bold SemiCondensed'
         }
     },
 });
