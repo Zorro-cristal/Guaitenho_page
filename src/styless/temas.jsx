@@ -14,5 +14,14 @@ export const temas= createTheme({
             'Bahnschrift',
             'Arial',
         ].join(','),
+        encabezado: {
+            fontFamily: 'Bahnschrift SemiLight Condensed'
+        },
+        titulo: {
+            fontFamily: 'Bahnschrift Bold SemiCondensed'
+        },
+        cuerpo: {
+            fontFamily: 'Bahnschrift SemiBold SemiCondensed'
+        }
     },
 });
