@@ -1,14 +1,14 @@
 import { Container, Grid, Typography } from '@mui/material';
 import { style } from '@mui/system';
-import { useState } from 'react';
-import { useEffect } from 'react';
-
+import { useRef, useState, useLayoutEffect, useEffect } from 'react';
 import Fondo_body from '../layout/fondo_body';
 import Cabecera from '../views/cabecera';
 import Menu_flotante from '../views/menu_flotante';
 import "../styless/principal.css";
 import { temas } from '../styless/temas';
 import Redes_sociales from '../views/redes_sociales';
+import Producto_destacado from '../layout/producto_destacado';
+import Servicio_info from '../layout/servicio_info';
 
 //https://cssgradient.io/
 
@@ -25,6 +25,16 @@ const Principal= () => {
             window.removeEventListener("scroll", updateScroll);
         }
     }, [scrollPos]);
+
+    const ref= useRef(null);
+    const [width, setWidth] = useState(0);
+
+    useLayoutEffect(() => {
+        setWidth(ref.current.offsetWidth);
+        console.log(width);
+        setWidth(100);
+        console.log(width);
+    }, []);
     
     return (<>
         {
@@ -41,19 +51,21 @@ const Principal= () => {
                 height: 200
             }}>
                 <h2>Servicios ofrecidos</h2>
+                <Servicio_info ruta="src\assets\productos\ventilador_portatil.png" titulo="Ventilador Portatil"/>
             </Container>
             <Container style={{
                 width: "100%",
-                height: 200,
+                height: 225,
                 backgroundColor: temas.palette.primary.main
             }}>
                 <h2>Productos populares del mercado</h2>
+                <Producto_destacado ruta="src\assets\productos\ventilador_portatil.png" titulo="Ventilador Portatil"/>
             </Container>
-            <Container style={{
+            <Container ref={ref} style={{
                 width: "100%",
                 height: 'auto'
             }}>
-                <Grid container style={{padding: 10}} spacing={30}>
+                <Grid container style={{padding: 10}} spacing={width*2/10}>
                     <Grid item xs={6} marginLeft={5}>
                         <Typography variant= 'titulo'>
                             <h2 style={{color: temas.palette.secondary.main}}>Gua'iteño House</h2>
