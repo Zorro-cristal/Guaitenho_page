@@ -18,7 +18,7 @@ export default function Redes_sociales () {
                     <SvgIcon component={FacebookIcon} color={temas.palette.secondary.main}/>
                 </ListItemIcon>
                 <ListItemText>
-                    <Link href="https://www.facebook.com/guaitenohouse">Gua'iteño House 2.0</Link>
+                    <Link style={{textDecoration: 'none'}} href="https://www.facebook.com/guaitenohouse">Gua'iteño House 2.0</Link>
                 </ListItemText>
             </ListItem>
             <ListItem style={estilo}>
@@ -26,7 +26,7 @@ export default function Redes_sociales () {
                     <SvgIcon component={InstagramIcon} color={temas.palette.secondary.main}/>
                 </ListItemIcon>
                 <ListItemText>
-                    <Link href="">guaitenohouse</Link>
+                    <Link href="" style={{textDecoration: 'none'}}>guaitenohouse</Link>
                 </ListItemText>
             </ListItem>
             <ListItem style={estilo}>
@@ -34,7 +34,7 @@ export default function Redes_sociales () {
                     <SvgIcon component={WhatsAppIcon} color={temas.palette.secondary.main}/>
                 </ListItemIcon>
                 <ListItemText>
-                    <Link href="https://wa.me/595983510916">(0983) 510916</Link>
+                    <Link style={{textDecoration: 'none'}} href="https://wa.me/595983510916">(0983) 510916</Link>
                 </ListItemText>
             </ListItem>
         </List>
