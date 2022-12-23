@@ -8,7 +8,7 @@ const Pie= () => {
             <Grid xs={6}>
                 <form method="get" action="https://wa.me/595983510916">
                     <h3 style={{textAlign: "start"}} className= "suscripcion_titulo">
-                        <span style={{color: temas.palette.secondary}}>Suscribete</span> para recibir ofertas, promociones y noticias!
+                        <em style={{color: temas.palette.secondary.main}}>Suscribete</em> para recibir ofertas, promociones y noticias!
                     </h3>
                     <input name="text" placeholder="Ingrese su numero de contacto o correo"/>
                     <button type="submit" variant="outlined">Suscribirse</button>
