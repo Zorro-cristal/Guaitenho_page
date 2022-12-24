@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
-import { Button, Container, Toolbar, Typography } from '@mui/material';
+import { Button, Container, SvgIcon, Toolbar, Typography } from '@mui/material';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Paginas } from '../constantes';
 import { Link } from 'react-router-dom';
@@ -21,9 +21,9 @@ export default function Menu_flotante() {
       <AppBar position="static" style={{width: "100vw"}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <img src={"src/assets/Logotipo.png"} alt={"logo_empresa"} width={50} height={50}/>
             <Typography
-              variant="h6"
+              variant="titulo"
               noWrap
               component="a"
               href="/"
@@ -35,22 +35,25 @@ export default function Menu_flotante() {
                 letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
+                fontSize: 30
               }}
             >
               Gua'iteño House
             </Typography>
             <Box sx={{ flexGrow: 1, position: "absolute", right: "0", display: { xs: 'none', md: 'flex' }}}>
-              {Paginas.map((pag) => (
-                <Link to={pag.ruta}>
-                  <Button
-                    key={pag.nombre}
-                    onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: 'white', display: 'block' }}
-                  >
-                    {pag.nombre}
-                  </Button>
-                </Link>
-              ))}
+              <Typography variant="titulo">
+                {Paginas.map((pag) => (
+                  <Link to={pag.ruta}>
+                    <Button
+                      key={pag.nombre}
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, color: 'white', display: 'block' }}
+                    >
+                      {pag.nombre}
+                    </Button>
+                  </Link>
+                ))}
+              </Typography>
             </Box>
           </Toolbar>
         </Container>
