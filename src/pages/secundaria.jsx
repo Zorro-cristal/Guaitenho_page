@@ -1,18 +1,11 @@
 import App from '../App';
 import '../index.css';
-import Menu_flotante from '../views/menu_flotante';
-import Pie from '../views/pie';
+import Fondo_body from '../layout/fondo_body';
 
-const Secundaria= () => {
-    return (<>
-        <Menu_flotante />
+export default function Secundaria () {
+    return (<Fondo_body>
         <h1>Pagina secundaria</h1>
         <App/>
         <h1>Texto</h1>
-        <h1>Texto</h1>
-        <h1>Texto</h1>
-        <h1>Texto</h1>
-    </>);
+    </Fondo_body>);
 }
-
-export default Secundaria;
