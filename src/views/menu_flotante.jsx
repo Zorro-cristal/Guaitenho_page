@@ -26,12 +26,11 @@ export default function Menu_flotante() {
               variant="titulo"
               noWrap
               component="a"
-              href="/"
+              //href="/"
               sx={{
                 mr: 2,
-                display: { xs: 'none', md: 'flex' },
                 fontFamily: 'monospace',
-                fontWeight: 700,
+                //fontWeight: 700,
                 letterSpacing: '.3rem',
                 color: 'inherit',
                 textDecoration: 'none',
@@ -40,7 +39,7 @@ export default function Menu_flotante() {
             >
               Gua'iteño House
             </Typography>
-            <Box sx={{ flexGrow: 1, position: "absolute", right: "0", display: { xs: 'none', md: 'flex' }}}>
+            <Box sx={{ flexGrow: 1, position: "absolute", right: "0"}}>
               <Typography variant="titulo">
                 {Paginas.map((pag) => (
                   <Link to={pag.ruta}>
