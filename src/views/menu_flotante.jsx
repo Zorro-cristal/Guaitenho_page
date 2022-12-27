@@ -17,7 +17,7 @@ export default function Menu_flotante() {
   };
 
   return (
-    <div style={{position: "fixed", top: "0", left: "0"}}>
+    <div style={{position: "fixed", top: "0", left: "0", zIndex: 10}}>
       <AppBar position="static" style={{width: "100vw"}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
