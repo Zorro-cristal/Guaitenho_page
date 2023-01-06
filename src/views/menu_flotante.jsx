@@ -21,7 +21,7 @@ export default function Menu_flotante() {
       <AppBar position="static" style={{width: "100vw"}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-          <img src={"src/assets/Logotipo.png"} alt={"logo_empresa"} width={50} height={50}/>
+          <img src={"Logotipo.png"} alt={"logo_empresa"} width={50} height={50}/>
             <Typography
               variant="titulo"
               noWrap

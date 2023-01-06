@@ -51,7 +51,7 @@ const Principal= () => {
                 height: 200
             }}>
                 <h2>Servicios ofrecidos</h2>
-                <Servicio_info ruta="src\assets\productos\ventilador_portatil.png" titulo="Ventilador Portatil"/>
+                <Servicio_info ruta="productos\ventilador_portatil.png" titulo="Ventilador Portatil"/>
             </Container>
             <Container style={{
                 width: "100%",
@@ -59,7 +59,7 @@ const Principal= () => {
                 backgroundColor: temas.palette.primary.main
             }}>
                 <h2>Productos populares del mercado</h2>
-                <Producto_destacado ruta="src\assets\productos\ventilador_portatil.png" titulo="Ventilador Portatil"/>
+                <Producto_destacado ruta="productos\ventilador_portatil.png" titulo="Ventilador Portatil"/>
             </Container>
             <Container ref={ref} style={{
                 width: "100%",
