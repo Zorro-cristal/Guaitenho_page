@@ -1,0 +1,31 @@
+@use 'variables' as v;
+
+.nav {
+    width: 100%;
+    background-color: v.$Azul;
+    color: whitesmoke;
+    height: 55px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__options {
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        &-title {
+            font-size: 41px;
+            font-weight: 300;
+        }
+    }
+}

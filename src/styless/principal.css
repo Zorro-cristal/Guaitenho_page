@@ -1,0 +1,14 @@
+.descripcion_tienda {
+    font-size: 18px;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: justify;
+}
