@@ -5,6 +5,10 @@ export const Paginas= [
         nombre: "Inicio"
     },
     {
+        ruta: "/nosotros",
+        nombre: "Contactos"
+    },
+    {
         ruta: "/secundaria",
         nombre: "Secundaria"
     }

@@ -2,7 +2,7 @@ import Fondo_body from '../layout/fondo_body';
 import Menu_flotante from '../views/menu_flotante';
 import { useRef, useState, useLayoutEffect, useEffect } from 'react';
 
-export default function Secundaria () {
+export default function Nosotros () {
     const [scrollPos, setScrollPos]= useState(0);
 
     const updateScroll= () => {
