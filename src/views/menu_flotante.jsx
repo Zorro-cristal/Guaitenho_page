@@ -42,9 +42,8 @@ export default function Menu_flotante() {
             <Box sx={{ flexGrow: 1, position: "absolute", right: "0"}}>
               <Typography variant="titulo">
                 {Paginas.map((pag) => (
-                  <Link to={pag.ruta}>
+                  <Link to={pag.ruta} key={pag.nombre}>
                     <Button
-                      key={pag.nombre}
                       onClick={handleCloseNavMenu}
                       sx={{ my: 2, color: 'white', display: 'block' }}
                     >

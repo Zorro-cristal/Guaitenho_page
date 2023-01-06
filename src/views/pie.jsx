@@ -5,8 +5,8 @@ import { temas } from "../styless/temas";
 
 const Pie= () => {
     return(
-        <Grid container  sx={{backgroundColor: temas.palette.primary.main, padding: "10px"}}>
-            <Grid xs={6}>
+        <Grid container sx={{backgroundColor: temas.palette.primary.main, padding: "10px"}}>
+            <Grid xs={6} item>
                 <form method="get" action="https://wa.me/595983510916">
                     <Typography variant= "titulo">
                         <h3 style={{textAlign: "start"}} className= "suscripcion_titulo">
@@ -19,7 +19,7 @@ const Pie= () => {
                     </Typography>
                 </form>
             </Grid>
-            <Grid xs={6}>
+            <Grid xs={6} item>
                 <Typography variant='titulo'>
                     <h3>Ubicacion</h3>
                 </Typography>
