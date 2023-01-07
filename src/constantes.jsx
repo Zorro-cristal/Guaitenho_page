@@ -1,3 +1,8 @@
+export const direcciones_paginas= {
+    facebook: 'https://www.facebook.com/guaitenohouse',
+    instagram: 'https://www.instagram.com/',
+    whatsapp: 'https://wa.me/595983510916',
+}
 
 export const Paginas= [
     {
