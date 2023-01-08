@@ -16,7 +16,7 @@ export default function Servicio_info(props) {
     return (
         <Container style={estilo}>
             <Avatar variant="square" sx={{width: tamano_avatar, height: tamano_avatar, bgcolor: {background}}} src={props.ruta}/>
-            <h2 style={{fontSize: 20, margin: 5}}>{props.titulo}</h2>
+            <h2 className="black-color" style={{fontSize: 20, margin: 5}}>{props.titulo}</h2>
         </Container>
     );
 }

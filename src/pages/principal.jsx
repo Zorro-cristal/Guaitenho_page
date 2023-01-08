@@ -1,4 +1,4 @@
-import { Container, Grid, Typography } from '@mui/material';
+import { Container, Grid, ThemeProvider, Typography } from '@mui/material';
 import { style } from '@mui/system';
 import { useRef, useState, useLayoutEffect, useEffect } from 'react';
 import Fondo_body from '../layout/fondo_body';
@@ -43,8 +43,8 @@ const Principal= () => {
         <Cabecera />
         <Fondo_body>
             <Typography variant='encabezado'>
-                <h1>Bienvenidos a nuestra tienda virtual</h1>
-                <h4 className='descripcion_tienda'>En esta tienda encontraras los mejores precios del mercado</h4>
+                <h1 style={{color: temas.palette.gris}}>Bienvenidos a nuestra tienda virtual</h1>
+                <h4 style={{color: temas.palette.gris}} className='descripcion_tienda'>En esta tienda encontraras los mejores precios del mercado</h4>
             </Typography>
             <Container style={{
                 width: "100%",
@@ -56,7 +56,7 @@ const Principal= () => {
             <Container style={{
                 width: "100%",
                 height: 225,
-                backgroundColor: temas.palette.primary.main
+                backgroundColor: temas.palette.azul_marino
             }}>
                 <h2>Productos populares del mercado</h2>
                 <Producto_destacado ruta="productos\ventilador_portatil.png" titulo="Ventilador Portatil"/>
@@ -68,15 +68,15 @@ const Principal= () => {
                 <Grid container style={{padding: 10}} spacing={width*2/10}>
                     <Grid item xs={6} marginLeft={5}>
                         <Typography variant= 'titulo'>
-                            <h2 style={{color: temas.palette.secondary.main}}>Gua'iteño House</h2>
+                            <h2 style={{color: temas.palette.lila}}>Gua'iteño House</h2>
                         </Typography>
                         <Typography variant='cuerpo'>
-                            <p>Somos una empresa que realiza ventas de los productos más nuevos del mercado, a través de servicios de delivery en especial al sector de a ciudad de Villarrica y alrrededores.</p>
+                            <p style={{color: temas.palette.gris}}>Somos una empresa que realiza ventas de los productos más nuevos del mercado, a través de servicios de delivery en especial al sector de a ciudad de Villarrica y alrrededores.</p>
                         </Typography>
                     </Grid>
                     <Grid xs={4} item>
                         <Typography variant= 'titulo'>
-                            <h2 style={{color: temas.palette.secondary.main}}>Siguenos en:</h2>
+                            <h2 style={{color: temas.palette.lila}}>Siguenos en:</h2>
                         </Typography>
                         <Redes_sociales />
                     </Grid>

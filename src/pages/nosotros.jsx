@@ -27,7 +27,7 @@ export default function Nosotros () {
         <div style={{height:65}}></div>
         <Fondo_body>
             <Typography variant='titulo'>
-                <h1>Conozcanos</h1>
+                <h1 style={{color: temas.palette.gris}}>Conozcanos</h1>
                 <Stack direction="row" divider={<Divider orientation="vertical" flexItem />} spacing={0} alignItems="center" justifyContent="center" m={2}>
                     <Stack style={{backgroundColor: temas.palette.primary.main}}>
                         <Typography variant='recuadro'>
@@ -62,8 +62,8 @@ export default function Nosotros () {
                         <img src={'avatar.jpg'} alt={'Mascota de la empresa'} height={435}/>
                     </Stack>
                 </Stack>
-                <h2>Nuestro equipo</h2>
-                <h2>Estamos ubicados en Villarrica, Paraguay</h2>
+                <h2 style={{color: temas.palette.gris}}>Nuestro equipo</h2>
+                <h2 style={{color: temas.palette.gris}}>Estamos ubicados en Villarrica, Paraguay</h2>
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114965.91613349908!2d-56.513546248784074!3d-25.78097010208623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945ecc42e3757fb1%3A0x88ef83d89320b7c5!2sVillarrica!5e0!3m2!1ses!2spy!4v1671391734784!5m2!1ses!2spy" 
                     width="80%" 

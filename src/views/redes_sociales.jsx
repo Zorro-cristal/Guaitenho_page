@@ -16,7 +16,7 @@ export default function Redes_sociales () {
         <List>
             <ListItem style={estilo}>
                 <ListItemIcon>
-                    <SvgIcon component={FacebookIcon} color={temas.palette.secondary.main}/>
+                    <SvgIcon component={FacebookIcon} color={temas.palette.azul_marino}/>
                 </ListItemIcon>
                 <ListItemText>
                     <Link style={{textDecoration: 'none'}} href={direcciones_paginas.facebook}>Gua'iteño House 2.0</Link>
@@ -24,7 +24,7 @@ export default function Redes_sociales () {
             </ListItem>
             <ListItem style={estilo}>
                 <ListItemIcon>
-                    <SvgIcon component={InstagramIcon} color={temas.palette.secondary.main}/>
+                    <SvgIcon component={InstagramIcon} color={temas.palette.azul_marino}/>
                 </ListItemIcon>
                 <ListItemText>
                     <Link href={direcciones_paginas.instagram} style={{textDecoration: 'none'}}>guaitenohouse</Link>
@@ -32,7 +32,7 @@ export default function Redes_sociales () {
             </ListItem>
             <ListItem style={estilo}>
                 <ListItemIcon>
-                    <SvgIcon component={WhatsAppIcon} color={temas.palette.secondary.main}/>
+                    <SvgIcon component={WhatsAppIcon} color={temas.palette.azul_marino}/>
                 </ListItemIcon>
                 <ListItemText>
                     <Link style={{textDecoration: 'none'}} href={direcciones_paginas.whatsapp}>(0983) 510916</Link>

@@ -4,17 +4,20 @@ import AppBar from '@mui/material/AppBar';
 import { Button, Container, SvgIcon, Toolbar, Typography } from '@mui/material';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Paginas } from '../constantes';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import { temas } from '../styless/temas';
 
 
 export default function Menu_flotante() {
-  const [value, setValue] = React.useState(0);
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const localizacion= useLocation();
+  console.log(localizacion.pathname);
 
   return (
     <div style={{position: "fixed", top: "0", left: "0", zIndex: 10}}>
@@ -25,14 +28,12 @@ export default function Menu_flotante() {
             <Typography
               variant="titulo"
               noWrap
-              component="a"
               //href="/"
               sx={{
                 mr: 2,
                 fontFamily: 'monospace',
                 //fontWeight: 700,
                 letterSpacing: '.3rem',
-                color: 'inherit',
                 textDecoration: 'none',
                 fontSize: 30
               }}
@@ -45,7 +46,11 @@ export default function Menu_flotante() {
                   <Link to={pag.ruta} key={pag.nombre}>
                     <Button
                       onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: 'white', display: 'block' }}
+                      sx={{ 
+                        my: 2, 
+                        color: localizacion.pathname == pag.ruta ? temas.palette.lila : 'white', 
+                        display: 'block'
+                      }}
                     >
                       {pag.nombre}
                     </Button>
